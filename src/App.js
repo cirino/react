@@ -5,13 +5,13 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div data-js="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Bem vindo ao React</h1>
+          <h1 className="App-title">Versão Beta - SMS</h1>
         </header>
         <p className="App-intro">
-          Atualizado. v0.0.5
+          Atualizado. v0.0.6
         </p>
       </div>
     );
