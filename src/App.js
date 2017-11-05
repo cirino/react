@@ -1,6 +1,8 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import logo from './logo.svg'
+import './App.css'
+import Title from './title.js'
+import Servicos from './modulos/servicos.js'
 
 class App extends Component {
   render() {
@@ -8,8 +10,13 @@ class App extends Component {
       <div data-js="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Versão Beta - SMS</h1>
+          <Title className="App-title" name='Versão Beta - SMS' />
         </header>
+        <p className="App-intro">
+          {['SMS', 'API', 'EMAIL', 'API', 'APPS'].map((servicos, index) => (
+              <Servicos key={index}  name={servicos} />
+            ))}
+        </p>
         <p className="App-intro">
           Atualizado. v0.0.6
         </p>
