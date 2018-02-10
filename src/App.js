@@ -10,7 +10,7 @@ class App extends Component {
       <div data-js="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <Title className="App-title" name='Versão Beta - SMS' />
+          <Title className="App-title" name='Versão Beta - React' />
         </header>
         <p className="App-intro">
           {['SMS', 'API', 'EMAIL', 'API', 'APPS'].map((servicos, index) => (
@@ -18,7 +18,7 @@ class App extends Component {
             ))}
         </p>
         <p className="App-intro">
-          Atualizado. v0.0.6
+          Atualizado. v0.0.6b
         </p>
       </div>
     );
