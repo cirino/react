@@ -5,7 +5,7 @@ const Servicos = ( { name }) => (
 )
 
 Servicos.defaultProps = {
-  name: 'Servicos'
+  name: 'Cereais e derivados'
 }
 
 export default Servicos;
