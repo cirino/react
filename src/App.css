@@ -1,27 +1,39 @@
+body {
+  background-color: #0bd0ff;
+}
+
 [data-js] {
-  text-align: center; 
-  font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: #020202;
+  font-family: 'Open Sans';
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 60px;
+*, *::before, *::after {
+  box-sizing: border-box;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.site {  
+  background-color: #fcfcfc;
+  border-radius:6px;
+  border: solid 1px #ddd;
+  
+  margin:15px;
+  padding: 15px;
 }
 
-.App-title {
-  font-size: 1.5em;
+.card-header-details .icon::before {
+	position: relative;
+  right: 7px;
+  top: 1px;
 }
 
 .App-intro {
   font-size: large;
+}
+.tituloLogo {
+  color:#0bd0ff;
+  margin-top: -3px;
+  margin-left: 100px;
+  display: block;
+  font-family: 'Open Sans';
 }
 
 @keyframes App-logo-spin {
@@ -34,8 +46,8 @@ a.active {
 }
 
 nav {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 /* Position and sizing of burger button */
@@ -54,6 +66,9 @@ nav {
 
 .bm-menu-wrap {
   height: 100% !important;
+  margin-left: 15px;
+  border: 1px solid #bdc3c7;
+  border-top-left-radius: 6px;
 }
 
 /* Position and sizing of clickable cross button */
@@ -88,5 +103,42 @@ nav {
 
 /* Styling of overlay */
 .bm-overlay {
-  background: rgba(0, 0, 0, 0.3);
+  /*background: rgba(0, 0, 0, 0.3);*/
+}
+
+
+/* layout */
+.container-box {
+  width: 100%;
+  max-width: auto;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-template-areas:
+    'header header header'
+    'aside main main'
+    'footer footer footer'
+  ;
+}
+
+.box {
+  /*background-color: #9009A0;*/
+}
+
+header {
+  grid-area: header;
+}
+
+aside {
+  grid-area: aside;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
 }

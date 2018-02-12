@@ -1,0 +1,83 @@
+[33mcommit ee019b9e8cd88162843f33019e0d8e2da3893a01[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Dagmar Cirino <dagmar.mv@gmail.com>
+Date:   Sun Feb 11 23:49:05 2018 -0200
+
+    0.0.8
+
+[33mcommit d8212da9ef9cd08de4eb9363a441816d9b6dff42[m
+Author: Dagmar Cirino <dagmar.mv@gmail.com>
+Date:   Sun Feb 11 23:37:03 2018 -0200
+
+    Limpeza de states, correção de maps e filters, component SideBar menu
+
+[33mcommit 5ba13c2778bc39f0b03b70e229824e6f31f17116[m
+Author: Dagmar Cirino <dagmar.mv@gmail.com>
+Date:   Sun Feb 11 06:25:51 2018 -0200
+
+    echo Atualização e novos recursos
+
+[33mcommit b94ea6ca58b7ebc23043b7af0e533ebf0262c261[m
+Author: Dagmar Cirino <dagmar.mv@gmail.com>
+Date:   Sun Feb 11 06:25:06 2018 -0200
+
+    echo
+
+[33mcommit 4e91a644c7b096f01a7e63eb7dd7e695fcba048f[m
+Author: Dagmar Cirino <dagmar.mv@gmail.com>
+Date:   Sat Feb 10 19:28:22 2018 -0200
+
+    echo
+
+[33mcommit 22c0aad5ca45599dbe308ef209e165d5f1392078[m
+Author: Dagmar Cirino <dagmar.mv@gmail.com>
+Date:   Tue Dec 19 00:41:43 2017 -0200
+
+    correção w10
+
+[33mcommit 3304b86d6f112b96f7dbde43f469997516a37ab6[m[33m ([m[1;33mtag: 0.0.7[m[33m)[m
+Author: Dagmar Cirino <dagmar.mv@gmail.com>
+Date:   Sun Nov 5 04:09:26 2017 -0200
+
+    inserindo maps e props
+
+[33mcommit 32d1a24e8deb5a067cd58f58882b0816eb9a89e4[m
+Author: Dagmar Cirino <dagmar.mv@gmail.com>
+Date:   Sun Nov 5 01:50:55 2017 -0200
+
+    configuração inicial
+
+[33mcommit 6a8d990f4db7a110af9f7ab41827608d900a3c94[m[33m ([m[1;33mtag: 0.0.6[m[33m)[m
+Author: Dagmar Cirino <dagmar.mv@gmail.com>
+Date:   Fri Nov 3 00:51:42 2017 -0200
+
+    app atualizado
+
+[33mcommit 8d0833fa555abb76723f9dc12488e8778763ded8[m[33m ([m[1;33mtag: 0.0.5[m[33m)[m
+Author: Dagmar Cirino <dagmar.mv@gmail.com>
+Date:   Fri Nov 3 00:50:08 2017 -0200
+
+    app atualizado
+
+[33mcommit d5f4ff6d83cb089f78f01d29fa8f47913e4769b9[m[33m ([m[1;33mtag: 0.0.4[m[33m)[m
+Author: Dagmar Cirino <dagmar.mv@gmail.com>
+Date:   Fri Nov 3 00:42:02 2017 -0200
+
+    app atualizado
+
+[33mcommit 632d719c5f1270561a433fa76271528fac4d4949[m[33m ([m[1;33mtag: 0.0.3[m[33m)[m
+Author: Dagmar Cirino <dagmar.mv@gmail.com>
+Date:   Fri Nov 3 00:34:54 2017 -0200
+
+    atualizado
+
+[33mcommit eb10950252ca42eb119c085333fbd4b09f680147[m[33m ([m[1;33mtag: 0.0.2[m[33m)[m
+Author: Dagmar Cirino <dagmar.mv@gmail.com>
+Date:   Fri Nov 3 00:09:28 2017 -0200
+
+    iniciando com React
+
+[33mcommit 12ba1a7c20106a186ac31d118ee49a260cca86b8[m[33m ([m[1;33mtag: 0.0.1[m[33m)[m
+Author: Dagmar Cirino <dagmar.mv@gmail.com>
+Date:   Thu Nov 2 23:55:03 2017 -0200
+
+    iniciando com React
