@@ -2,10 +2,14 @@ import React, { Component } from 'react'
 import logo from './logo.svg'
 import './App.css'
 import Title from './title'
-import Servicos from './modulos/servicos'
+import Categorias from './modulos/Categoria'
 import Alimentos from './modulos/Alimento'
 import { categoria } from './categoria'
 import { alimento } from './alimento'
+
+import SideBar from './modulos/Menu'
+
+import {slide as Menu} from 'react-burger-menu';
 
 class App extends Component {
   constructor(props) {
@@ -13,32 +17,21 @@ class App extends Component {
     
     this.state = {
 
-      filtroAlimento: alimento.filter((item) => item._id === 31),
+      filtroAlimento: alimento.filter((item) => item._id === 27),
       filtroCategoria: categoria.filter((item) => item.classificacao <= 3),
-      filtroClassificacaoAlimento: alimento.filter((item) => item.classificacao === 8)
+
+      cat: 4
       
     }
 
-    //this.ActionCategoria = this.ActionCategoria.bind(this);
-    //this.ActionAlimento = this.ActionAlimento.bind(this);
-    //this.ActionClassificacaoAlimento = this.ActionClassificacaoAlimento.bind(this);
     this.handleClicka = this.handleClicka.bind(this);
   }
 
   handleClicka ( _id ) {
-
-    console.log('handk ' + _id);
+    let id = _id.target.textContent;
     this.setState ({      
-      filtroClassificacaoAlimento: alimento.filter((item) => item.classificacao === _id)
-      //filtroClassificacaoAlimento: alimento.filter((item) => item.classificacao === 5)
+      cat: parseInt(id)
     })
-  }
-
-  ActionCategoria( id, categoria, image ) {
-    console.log('Id - ' + id );
-    return (<a href="#" onClick={this.handleClicka.bind( id )}>
-      {id} - {categoria} - {image}
-    </a>)
   }
 
   ActionAlimento( id, classificacao, descricao ) {
@@ -63,51 +56,63 @@ class App extends Component {
     </a>
   }
 
+  getMenu() {
+    let jsx;
+
+    let items = [
+      <a key="0" href=""><i className="fa fa-fw fa-star-o" /><span>Favorites</span></a>,
+      <a key="1" href=""><i className="fa fa-fw fa-bell-o" /><span>Alerts</span></a>,
+      <a key="2" href=""><i className="fa fa-fw fa-envelope-o" /><span>Messages</span></a>,
+      <a key="3" href=""><i className="fa fa-fw fa-comment-o" /><span>Comments</span></a>,
+      <a key="4" href=""><i className="fa fa-fw fa-bar-chart-o" /><span>Analytics</span></a>,
+      <a key="5" href=""><i className="fa fa-fw fa-newspaper-o" /><span>Reading List</span></a>
+    ];
+
+  }
+
   render() {
-    //let filtroCategoria = categoria.filter((item) => item.classificacao <= 3)
-    //let filtroClassificacaoAlimento = alimento.filter((item) => item.classificacao === 7)
-    //let filtroAlimento = alimento.filter((item) => item._id === 43)
     let filtroCategoria = this.state.filtroCategoria
     let filtroClassificacaoAlimento = this.state.filtroClassificacaoAlimento
     let filtroAlimento = this.state.filtroAlimento
-    
+    let a = this.state.cat
+
     return (
+
       <div data-js="App">
+        
+        <SideBar />
+
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <Title className="App-title" name='Versão Beta - React' />
         </header>
-        <a href="#" onClick={this.handleClicka.bind( 7 )}>
-          direto para o state
-        </a>
+
         <p>
             {filtroCategoria.map((item, index) =>
-              <li>filtroCategoria - função {this.ActionCategoria( item.classificacao, item.categoria, item.image )}
-                {item.classificacao} - {item.categoria}
+              <li>filtroCategoria - onclick <a href="#" onClick={this.handleClicka.bind( item.classificacao )}>
+                {item.classificacao}</a>
               </li>
             )}
         </p>
         <p>
-            {filtroCategoria.map((item, index) =>
-                <li>filtroCategoria - onclick <a href="#" onClick={this.handleClicka.bind( item.classificacao )}>
-                  {item.classificacao}</a>
-                </li>
-            )}
+            {
+              /*filtroAlimento.map((item, index) => 
+              <li>filtroAlimento { this.ActionAlimento(item._id, item.classificacao, item.descricao)}</li>
+            )*/
+            }
         </p>
         <p>
-            {filtroAlimento.map((item, index) => 
-              <li>filtroAlimento {this.ActionAlimento(item._id, item.classificacao, item.descricao)}</li>
-            )}
-        </p>
-        <p>
-            {filtroClassificacaoAlimento.map((item, index) => 
-              <li>filtroClassificacaoAlimento {this.ActionClassificacaoAlimento(item._id, item.classificacao, item.descricao)}</li>
-            )}
+            {/*
+            alimento.filter((item) => item.classificacao === a).map((item, index) =>
+                  <li>filtroClassificacaoAlimento
+                  { this.ActionClassificacaoAlimento(item._id, item.classificacao, item.descricao)}</li>
+              )*/
+           }
         </p>
         
         <div>
           {categoria.map((servicos, index) => (
-              <Servicos key={index}  name={servicos.categoria} />
+              <Categorias key={index}  name={servicos.categoria} />
           ))}
         </div>
 
@@ -118,7 +123,8 @@ class App extends Component {
                 id={item._id}
                 classificacao={item.classificacao}
                 descricao={item.descricao} />
-          ))}
+          ))
+        }
         </div>
 
         <p className="App-intro">
