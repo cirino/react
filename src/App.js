@@ -128,7 +128,7 @@ class App extends Component {
         </div>
 
         <p className="App-intro">
-          Atualizado. v0.0.7
+          Atualizado. v0.0.8
         </p>
       </div>
     );
