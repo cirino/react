@@ -1,20 +1,17 @@
 import React from 'react'
 
 const DetalheAlimento = ( props ) => (
-    <h2>
+    <h4>
         {`
-            id: ${props._id} \n
-            cat: ${props.classificacao} - 
-            descrição: ${props.descricao} - 
             energia kcal: ${props.energia.kcal} - 
-            proteina: ${props.proteina} - 
-            umidade: ${props.umidade} -
             carboidrato: ${props.carboidrato} - 
             colesterol: ${props.colesterol} - 
+            proteina: ${props.proteina} - 
             ferro: ${props.ferro} -
             sódio:  ${props.sodio}
+            umidade: ${props.umidade} -
         `}
-    </h2>
+    </h4>
 )
 
 export default DetalheAlimento;
