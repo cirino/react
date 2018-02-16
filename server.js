@@ -1,18 +1,16 @@
-/*
 const express = require('express');
-
 const app = express();
+
 const port = process.env.PORT || 5000;
 
+app.use(express.static(__dirname + '/public/index.html'))
 app.get('/api/mensagem', (req, res) => {
   res.send({ express: 'É nóis mano. API funcionando perfeitamente :) HAHAHA' });
 });
 
-app.listen(port, () => console.log(`Listening on port ${port}`));
-*/
+app.listen(port, () => console.log(`Rodando em localhost: ${port}`));
 
-var express = require('express')
-var app = express()
+
 
 const MongoClient = require('mongodb').MongoClient;
 const assert = require('assert');
@@ -28,14 +26,3 @@ MongoClient.connect(url, function(err, client) {
  
   client.close();
 });
-
-app.set('port', (process.env.PORT || 5000))
-app.use(express.static(__dirname + '/public'))
-
-app.get('/api/mensagem', (request, response) => {
-  response.send({express: 'É nóis mano. API funcionando perfeitamente :) HAHAHA!'})
-});
-
-app.listen(app.get('port'), () => {
-  console.log("Rodando em localhost: " + app.get('port'))
-})
