@@ -11,20 +11,3 @@ app.get('/api/mensagem', (req, res) => {
 });
 
 app.listen(port, () => console.log(`Rodando em localhost: ${port}`));
-
-
-
-const MongoClient = require('mongodb').MongoClient;
-const assert = require('assert');
- 
-const url = 'mongodb://localhost:27017';
-const dbName = 'versaobeta';
-
-MongoClient.connect(url, function(err, client) {
-  assert.equal(null, err);
-  console.log("Conectou no servidor mongodb");
- 
-  const db = client.db(dbName);
- 
-  client.close();
-});
