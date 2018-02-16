@@ -15,7 +15,7 @@
   "concurrently": "^3.5.0"
  },
  "engines": {
-    "node": "4.7.0"
+    "node": "8.9.4"
   },
  "repository": {
     "type": "git",

@@ -32,7 +32,7 @@ MongoClient.connect(url, function(err, client) {
 app.set('port', (process.env.PORT || 5000))
 app.use(express.static(__dirname + '/public'))
 
-app.get('*', (request, response) => {
+app.get('/api/mensagem', (request, response) => {
   response.send({express: 'É nóis mano. API funcionando perfeitamente :) HAHAHA!'})
 });
 
