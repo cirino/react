@@ -3,16 +3,24 @@ const app = express();
 
 const port = process.env.PORT || 5000;
 
-app.use('/', express.static(__dirname + '/client/public/index.html'))
+// CONFIGURATION  =====================================
+app.use(express.static(__dirname + '/client/public'));     // set static files loc
+app.use(bodyParser.urlencoded({ 'extended' : 'true' }));
+app.use(bodyParser.json());
+app.use(bodyParser.json({ type: 'application/vnd.api+json' }));
+app.use(methodOverride());
 
+// ROUTES =============================================
 
 // application routes --------------------------------
-app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, '/public/index.html'));
+app.get('*', function (req, res) {
+  res.sendFile(path.join(__dirname, '/client/public/index.html'));
 });
 
+/*
 app.get('/api/mensagem', (req, res) => {
   res.send({ express: 'É nóis mano. API funcionando perfeitamente :) HAHAHA' });
 });
+*/
 
 app.listen(port, () => console.log(`Rodando em localhost: ${port}`));
