@@ -9,14 +9,12 @@ app.use(express.static(__dirname + '/client/public'));     // set static files l
 // ROUTES =============================================
 
 // application routes --------------------------------
-app.get('*', function (req, res) {
+app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, '/client/public/index.html'));
 });
 
-/*
 app.get('/api/mensagem', (req, res) => {
   res.send({ express: 'É nóis mano. API funcionando perfeitamente :) HAHAHA' });
 });
-*/
 
 app.listen(port, () => console.log(`Rodando em localhost: ${port}`));
