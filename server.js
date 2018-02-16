@@ -5,10 +5,6 @@ const port = process.env.PORT || 5000;
 
 // CONFIGURATION  =====================================
 app.use(express.static(__dirname + '/client/public'));     // set static files loc
-app.use(bodyParser.urlencoded({ 'extended' : 'true' }));
-app.use(bodyParser.json());
-app.use(bodyParser.json({ type: 'application/vnd.api+json' }));
-app.use(methodOverride());
 
 // ROUTES =============================================
 
