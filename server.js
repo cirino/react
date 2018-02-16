@@ -4,7 +4,7 @@ const path = require('path');
 
 const port = process.env.PORT || 5000;
 
-app.use(express.static(path.join(__dirname, 'public', 'index.html')))
+app.use('/', express.static(path.join(__dirname, 'public', 'index.html')))
 
 app.get('/api/mensagem', (req, res) => {
   res.send({ express: 'É nóis mano. API funcionando perfeitamente :) HAHAHA' });
