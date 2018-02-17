@@ -2,7 +2,6 @@
   "name": "ninja",
   "version": "1.0.0",
   "description": "Site do ninja no Heroku",
-
   "scripts": {
     "start": "node server",
     "heroku-postbuild": "cd client/ && npm install && npm install --only=dev --no-shrinkwrap && npm run build",
