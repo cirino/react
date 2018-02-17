@@ -1,25 +1,40 @@
 {
- "name": "node-react",
- "version": "1.0.0",
- "main" : "server.js",
- "scripts": {
-  "client": "cd client && npm start",
-  "server": "node server.js",
-  "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\""
- },
- "dependencies": {
-  "express": "^4.16.2"
- },
- "devDependencies": {
-  "concurrently": "^3.5.0"
- },
- "repository": {
-    "type": "git",
-    "url": "https://github.com/cirino/react"
+  "name": "ninja",
+  "version": "1.0.0",
+  "description": "Site do ninja no Heroku",
+  "engines": {
+    "node": "8.9.x"
   },
+  "scripts": {
+    "start": "node server",
+    "heroku-postbuild": "cd client/ && npm install && npm install --only=dev --no-shrinkwrap && npm run build",
+    "client": "cd client/ && npm start",
+    "server": "npm start",
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\""
+  },
+  "cacheDirectories": [
+    "node_modules",
+    "client/node_modules"
+  ],
+  "dependencies": {
+    "express": "^4.14.1"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mars/heroku-cra-node.git"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "create-react-app",
+    "react"
+  ],
   "author": "Dagmar Cirino",
   "contributors": [
     "Dagmar Cirino"
   ],
-  "license": "cc 1"
+  "license": "MIT"
 }
