@@ -2,9 +2,6 @@
   "name": "ninja",
   "version": "0.1.0",
   "private": true,
-  "devDependencies": {
-    "react-scripts": "^1.1.0"
-  },
   "dependencies": {
     "react": "^16.2.0",
     "react-burger-menu": "^2.2.3",
