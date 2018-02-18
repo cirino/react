@@ -22,12 +22,12 @@ if (cluster.isMaster) {
   const app = express();
 
   // Priority serve any static files.
-  app.use(express.static(path.resolve(__dirname, '../client/build')));
+  app.use(express.static(path.resolve(__dirname, '../client')));
 
-  // Answer API requests.
+  // Resposta para solciitação da API.
   app.get('/api/mensagem', function (req, res) {
     res.set('Content-Type', 'application/json');
-    res.send({message:'É nóis mano. API funcionando perfeitamente :) HAHAHA!!!!!!'});
+    res.send({message:'API funcionando perfeitamente :) HAHAHA!!!!!!'});
   });
 
   // All remaining requests return the React app, so it can handle routing.

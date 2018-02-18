@@ -1,17 +1,4 @@
 /*
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
-
-class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      message: null,
-      fetching: true
-    };
-  }
-
   componentDidMount() {
     fetch('/api')
       .then(response => {
@@ -32,32 +19,7 @@ class App extends Component {
         });
       })
   }
-
-  render() {
-    return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          {'This is '}
-          <a href="https://github.com/mars/heroku-cra-node">
-            {'create-react-app with a custom Node/Express server'}
-          </a><br/>
-        </p>
-        <p className="App-intro">
-          {this.state.fetching
-            ? 'Fetching message from API'
-            : this.state.message}
-        </p>
-      </div>
-    );
-  }
-}
-
-export default App;
-*/
+*/   
 
 import React, { Component } from 'react'
 import './App.css'
@@ -72,6 +34,7 @@ class App extends Component {
     super(props);
     
     this.state = {
+      modal: false,
       cat: 1,
       response: '',
       message: null,
@@ -79,7 +42,13 @@ class App extends Component {
     }
 
     this.handleClickCategorias = this.handleClickCategorias.bind(this);
-    this.filho = this.filho.bind(this);
+    this.toggle = this.toggle.bind(this);
+  }
+
+  toggle = () => {
+    this.setState({
+      modal: !this.state.modal
+    });
   }
 
     componentDidMount() {
@@ -89,20 +58,17 @@ class App extends Component {
           throw new Error(`status ${response.status}`);
         }
         return response.json();
-        console.log('carregou');
       })
       .then(json => {
         this.setState({
           message: json.message,
           fetching: false
         })
-        console.log('json');
       }).catch(e => {
         this.setState({
           message: `API call failed: ${e}`,
           fetching: false
-        })        
-        console.log('erro');
+        })
       })
     }
 
@@ -116,12 +82,6 @@ class App extends Component {
     };
     */
 
-    filho = ( ) => { 
-      alert('filho')
-
-      console.log('teste completo' + this.state.cat)
-    }
-
     handleClickCategorias = ( _id ) => {
       _id.preventDefault();
       let id = _id.target.textContent;
@@ -133,6 +93,7 @@ class App extends Component {
 
   render() {
     let cat = this.state.cat;
+
     return (
 
       <div data-js="App">
@@ -159,12 +120,15 @@ class App extends Component {
                 alimento.filter((item) => item.classificacao === cat).map((item, index) => (
                   <Alimentos
                     key={item._id}
-                    {...item} />
+                    {...item} 
+                    //toggle={this.toggle}
+                    //stateModal={this.state.modal}
+                  />
                 ))
               }
             </main>
 
-            <footer className="box">Atualizado. v0.1.1</footer>
+            <footer className="box">Atualizado. v0.1.2</footer>
 
           </div>
         </div>

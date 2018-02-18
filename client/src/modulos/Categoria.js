@@ -13,7 +13,9 @@ class Categorias extends Component {
 			<ul>
 			{categorias.map((item, index) =>
 				<li>
-					<img src={`http://lorempixel.com/60/60/food/${this.img()}/`} alt={item.categoria} />
+					{
+						//<img src={`http://lorempixel.com/60/60/food/${this.img()}/`} alt={item.categoria} />
+					}
 					<a href="#" onClick={this.props.categorias}>
 						{item.classificacao} - {item.categoria}
 					</a>
