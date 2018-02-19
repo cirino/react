@@ -22,7 +22,7 @@ if (cluster.isMaster) {
   const app = express();
 
   // Priority serve any static files.
-  app.use(express.static(path.resolve(__dirname, '../client')));
+  app.use(express.static(path.resolve(__dirname, '../client/build')));
 
   // Resposta para solciitação da API.
   app.get('/api/mensagem', function (req, res) {
