@@ -2,6 +2,7 @@ const express = require('express');
 const path = require('path');
 const cluster = require('cluster');
 const numCPUs = require('os').cpus().length;
+const bodyParser = require('body-parser');
 
 const PORT = process.env.PORT || 5000;
 
@@ -21,15 +22,18 @@ if (cluster.isMaster) {
 } else {
   const app = express();
 
+  app.use(bodyParser.urlencoded({ extended: true }))
+  app.use(bodyParser.json())
+  
   // Priority serve any static files.
   app.use(express.static(path.resolve(__dirname, '../client/build')));
 
-  // Resposta para solciitação da API.
+  // Resposta para solcitação da API.
   app.get('/api/mensagem', function (req, res) {
     res.set('Content-Type', 'application/json');
     res.send({message:'API funcionando perfeitamente :) HAHAHA!!!!!!'});
   });
-
+  
   // All remaining requests return the React app, so it can handle routing.
   app.get('*', function(request, response) {
     response.sendFile(path.resolve(__dirname, '../client/build', 'index.html'));

@@ -3,7 +3,6 @@ import 'bootstrap/dist/css/bootstrap.css';
 import  { Container, Row, Col } from 'reactstrap';
 
 const DetalheAlimento = ( props ) => (
-    
     <Container>
         <Row>
             <Col>energia kcal: {props.energia.kcal}</Col>

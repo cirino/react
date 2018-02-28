@@ -1,25 +1,3 @@
-/*
-  componentDidMount() {
-    fetch('/api')
-      .then(response => {
-        if (!response.ok) {
-          throw new Error(`status ${response.status}`);
-        }
-        return response.json();
-      })
-      .then(json => {
-        this.setState({
-          message: json.message,
-          fetching: false
-        });
-      }).catch(e => {
-        this.setState({
-          message: `API call failed: ${e}`,
-          fetching: false
-        });
-      })
-  }
-*/   
 
 import React, { Component } from 'react'
 import './App.css'
@@ -97,7 +75,6 @@ class App extends Component {
     return (
 
       <div data-js="App">
-        
         <SideBar />
         <div className="site">
 
@@ -120,7 +97,7 @@ class App extends Component {
                 alimento.filter((item) => item.classificacao === cat).map((item, index) => (
                   <Alimentos
                     key={item._id}
-                    {...item} 
+                    {...item}
                     //toggle={this.toggle}
                     //stateModal={this.state.modal}
                   />
@@ -136,5 +113,6 @@ class App extends Component {
     );
   }
 }
+
 
 export default App;
