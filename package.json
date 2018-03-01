@@ -1,7 +1,7 @@
 {
   "name": "ninja",
   "version": "0.1.2",
-  "description": "Site do ninja no Heroku",
+  "description": "Site do cirino no Heroku",
   "scripts": {
     "start": "node server",
     "heroku-postbuild": "cd client/ && npm install && npm install --only=dev --no-shrinkwrap && npm run build",
@@ -16,16 +16,13 @@
   "dependencies": {
     "express": "^4.14.1",
     "nighthawk": "^2.2.0",
-    "bootstrap": "^4.0.0",
     "react": "^16.2.0",
-    "react-burger-menu": "^2.2.3",
     "react-dom": "^16.2.0",
-    "react-scripts": "1.0.16",
     "react-router-dom": "^4.2.2",
+    "react-scripts": "1.0.16",
     "reactstrap": "^5.0.0-beta"
   },
   "devDependencies": {
-    "body-parser": "^1.18.2",
     "concurrently": "^3.5.0",
     "jquery": "^3.3.1"
   },

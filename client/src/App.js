@@ -4,8 +4,6 @@ import './App.css'
 import Categorias from './modulos/Categoria'
 import Alimentos from './modulos/Alimento'
 import { alimento } from './modulos/Data/alimento'
-
-import SideBar from './modulos/Menu'
   
 class App extends Component {
   constructor(props) {
@@ -75,7 +73,6 @@ class App extends Component {
     return (
 
       <div data-js="App">
-        <SideBar />
         <div className="site">
 
           <div className="container-box">

@@ -1,29 +1,24 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
-import '../App.css'
+import Menu from '../modulos/Menu'
+
 import Home from '../App'
-import About from '../pages/about'
+import Sobre from '../pages/sobre'
+import Outra from '../pages/outra'
+import Contato from '../pages/contato'
+import Teste from '../pages/teste'
 
 const App = () => (
   <Router>
     <div>
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/about">About</Link>
-        </li>
-        <li>
-          <Link to="/Home">Topics</Link>
-        </li>
-      </ul>
-
-      <hr />
+      <Menu />
 
       <Route exact path="/" component={Home} />
-      <Route path="/about" component={About} />
+      <Route path="/sobre" component={Sobre} />
+      <Route path="/outra" component={Outra} />
+      <Route path="/contato" component={Contato} />
+      <Route path="/teste" component={Teste} />
     </div>
   </Router>
 );

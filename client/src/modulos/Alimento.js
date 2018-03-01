@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import DetalheAlimento from './DetalheAlimento'
 import './Alimento.css'
 
-import 'bootstrap/dist/css/bootstrap.css';
 import  { Card, CardText, CardBody, CardHeader, Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
 class Alimentos extends Component {
