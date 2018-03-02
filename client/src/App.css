@@ -59,6 +59,7 @@ footer {
   grid-area: footer;
 }
 
+
 /*
     red: #E73F3F
     orange: #F76C27
@@ -67,10 +68,9 @@ footer {
     purple: #7E45D3
 */
 
+
 /*
-
-
-          <div className="loading-notice apploading" id="apploading" role="alert">
+<div className="loading-notice apploading" id="apploading" role="alert">
             <div className="wrapper">
                 <div className="spinner">
                     <div className="rect1"></div>
@@ -82,7 +82,20 @@ footer {
                 <p className="loading-text">Loading</p>
             </div>
           </div>
+          
 
-.loading-notice{position:absolute;top:0;right:0;bottom:0;z-index:99;margin:0 auto;width:calc(100% - 275px);height:100%;text-align:center}.loading-notice .wrapper{position:relative;top:50%;transform:translateY(-50%);margin:0 auto;border-radius:10px;background-color:#dde5ee;padding:20px;width:140px}.loading-notice.apploading{left:0;width:100%}.loading-notice .loading-text{margin-bottom:0;text-transform:uppercase;letter-spacing:2px;color:#263648;font-weight:300}.loading-notice .spinner{margin:0 auto 10px;width:50px;height:40px;text-align:center;font-size:10px}.loading-notice .spinner>div{display:inline-block;-webkit-animation:stretchdelay 1.2s infinite ease-in-out;animation:stretchdelay 1.2s infinite ease-in-out;margin-left:3px;border-radius:50px;background-color:#00bd9c;width:6px;height:100%}.loading-notice .spinner>div:first-child{margin-left:0}.loading-notice .spinner .rect2{-webkit-animation-delay:-1.1s;animation-delay:-1.1s}.loading-notice .spinner .rect3{-webkit-animation-delay:-1s;animation-delay:-1s}.loading-notice .spinner .rect4{-webkit-animation-delay:-.9s;animation-delay:-.9s}.loading-notice .spinner .rect5{-webkit-animation-delay:-.8s;animation-delay:-.8s}@-webkit-keyframes stretchdelay{0%,100%,40%{-webkit-transform:scaleY(.4)}20%{-webkit-transform:scaleY(1)}}@keyframes stretchdelay{0%,100%,40%{-webkit-transform:scaleY(.4);transform:scaleY(.4)}20%{-webkit-transform:scaleY(1);transform:scaleY(1)}}
+.loading-notice{position:absolute;top:0;right:0;bottom:0;z-index:99;margin:0 auto;width:calc(100% - 305px);height:100%;text-align:center}
+.loading-notice .wrapper{position:relative;top:50%;transform:translateY(-50%);margin:0 auto;border-radius:10px;background-color:#dde5ee;padding:20px;width:140px}
+.loading-notice.apploading{left:0;width:100%}
+.loading-notice .loading-text{margin-bottom:0;text-transform:uppercase;letter-spacing:2px;color:#263648;font-weight:300}
+.loading-notice .spinner{margin:0 auto 10px;width:50px;height:40px;text-align:center;font-size:10px}
+.loading-notice .spinner>div{display:inline-block;-webkit-animation:stretchdelay 1.2s infinite ease-in-out;animation:stretchdelay 1.2s infinite ease-in-out;margin-left:3px;border-radius:50px;background-color:#00bd9c;width:6px;height:100%}
+.loading-notice .spinner>div:first-child{margin-left:0}
+.loading-notice .spinner .rect2{-webkit-animation-delay:-1.1s;animation-delay:-1.1s}
+.loading-notice .spinner .rect3{-webkit-animation-delay:-1s;animation-delay:-1s}
+.loading-notice .spinner .rect4{-webkit-animation-delay:-.9s;animation-delay:-.9s}
+.loading-notice .spinner .rect5{-webkit-animation-delay:-.8s;animation-delay:-.8s}
+@-webkit-keyframes stretchdelay{0%,100%,40%{-webkit-transform:scaleY(.4)}20%{-webkit-transform:scaleY(1)}}
+@keyframes stretchdelay{0%,100%,40%{-webkit-transform:scaleY(.4);transform:scaleY(.4)}20%{-webkit-transform:scaleY(1);transform:scaleY(1)}}
 
 */

@@ -1,6 +1,8 @@
 
 import React, { Component } from 'react'
 import './App.css'
+import Header from './modulos/Header'
+
 import Categorias from './modulos/Categoria'
 import Alimentos from './modulos/Alimento'
 import { alimento } from './modulos/Data/alimento'
@@ -45,7 +47,7 @@ class App extends Component {
           message: `API call failed: ${e}`,
           fetching: false
         })
-      })
+      });
     }
 
     /*
@@ -73,11 +75,13 @@ class App extends Component {
     return (
 
       <div data-js="App">
+
         <div className="site">
+        <Header title="CPIX Design" subtitle="Tabela de nutrientes alimentares completa" />
 
           <div className="container-box">
             <header className="box">
-              <h1 className="tituloLogo">CPIX Design - Tabela de nutrientes alimentares completa</h1>
+              
               <p className="App-intro">
                 {this.state.fetching
                   ? 'Recuperando dados da API'
