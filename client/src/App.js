@@ -77,7 +77,6 @@ class App extends Component {
       <div data-js="App">
 
         <div className="site">
-        <Header title="CPIX Design" subtitle="Tabela de nutrientes alimentares completa" />
 
           <div className="container-box">
             <header className="box">
