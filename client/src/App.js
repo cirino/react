@@ -92,6 +92,7 @@ class App extends Component {
               <Categorias categorias={this.handleClickCategorias} />
             </aside>
 
+
             <main className="box">
               {
                 alimento.filter((item) => item.classificacao === cat).map((item, index) => (
@@ -104,9 +105,6 @@ class App extends Component {
                 ))
               }
             </main>
-
-            <footer className="box">Atualizado. v0.1.2</footer>
-
           </div>
         </div>
       </div>
