@@ -48,7 +48,7 @@ export default props => (
                     <p className="float-left">
                         <a href="#">Back to top</a>
                     </p>
-                    <p className="text-right text-muted">Atualizado <i className="fa fa-heart"></i>: <a href=""><i>v0.1.2</i></a> | <span>v. 0.1.2</span></p>
+                    <p className="text-right text-muted">Atualizado <i className="fa fa-heart"></i>: <a href=""><i>v0.2.1</i></a> | <span>v. 0.2.1</span></p>
                 </div>
             </div>
         </div>

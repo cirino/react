@@ -1,6 +1,6 @@
 {
-  "name": "ninja",
-  "version": "0.1.2",
+  "name": "VersaoBeta",
+  "version": "0.2.1",
   "description": "Site do cirino no Heroku",
   "scripts": {
     "start": "node server",

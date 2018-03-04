@@ -11,13 +11,13 @@ import Teste from '../pages/teste'
 
 export default props => (
   <Router>
-    <div>
+    <main>
       <Menu />
       <Route exact path="/" component={Home} />
       <Route path="/sobre" component={Sobre} />
       <Route path="/outra" component={Outra} />
       <Route path="/contato" component={Contato} />
       <Route path="/teste" component={Teste} />
-    </div>
+    </main>
   </Router>
 )

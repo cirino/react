@@ -1,6 +1,6 @@
 {
-  "name": "ninja",
-  "description": "web app do ninja com create-react-app UI + Node API",
+  "name": "VersaoBeta",
+  "description": "web app do VersaoBeta com create-react-app UI + Node API",
   "scripts": {
   },
   "env": {

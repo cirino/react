@@ -19,6 +19,10 @@ body {
   padding: 15px;
 }
 
+.cardAlimento {
+  padding-bottom: 20px;
+}
+
 footer {
   background: #343a40;
   padding: 40px;
@@ -42,17 +46,24 @@ a.active {
   grid-template-rows: auto;
   grid-template-areas:
     'header header header'
+    'nav nav nav'
     'aside main main'
     'footer footer footer'
   ;
 }
 
 .box {
-  background-color: #9009A0;
+  /*background-color: #9009A0;*/
 }
 
 header {
   grid-area: header;
+  padding: 20px 0px;
+}
+
+nav {
+  grid-area: nav;
+  margin-bottom: 20px;
 }
 
 aside {
@@ -65,6 +76,7 @@ main {
 
 footer {
   grid-area: footer;
+  margin-top: 20px;
 }
 
 

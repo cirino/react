@@ -76,7 +76,6 @@ class App extends Component {
 
       <div data-js="App">
 
-        <div className="site">
 
           <div className="container-box">
             <header className="box">
@@ -92,7 +91,6 @@ class App extends Component {
               <Categorias categorias={this.handleClickCategorias} />
             </aside>
 
-
             <main className="box">
               {
                 alimento.filter((item) => item.classificacao === cat).map((item, index) => (
@@ -107,7 +105,6 @@ class App extends Component {
             </main>
           </div>
         </div>
-      </div>
     );
   }
 }
