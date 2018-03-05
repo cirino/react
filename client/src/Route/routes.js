@@ -7,7 +7,7 @@ import Home from '../App'
 import Sobre from '../pages/sobre'
 import Outra from '../pages/outra'
 import Contato from '../pages/contato'
-import Teste from '../pages/teste'
+import DetalheAlimento from '../pages/detalheAlimento'
 
 export default props => (
   <Router>
@@ -17,7 +17,8 @@ export default props => (
       <Route path="/sobre" component={Sobre} />
       <Route path="/outra" component={Outra} />
       <Route path="/contato" component={Contato} />
-      <Route path="/teste" component={Teste} />
+      <Route path="/detalheAlimento/:id" component={DetalheAlimento} />
+      <Route path="/detalheAlimentos" component={DetalheAlimento} />
     </main>
   </Router>
 )

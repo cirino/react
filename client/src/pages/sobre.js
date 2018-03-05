@@ -11,24 +11,62 @@ export default props => (
   <div className="card-body py-0 px-4 b-t-1"><div className="row"><div className="col-6 b-r-1 py-3"><div className="font-weight-bold">9.127</div> <div className="text-muted"><small>Deals</small></div></div>
    <div className="col-6 py-3 text-right"><div className="font-weight-bold">$1,897,87</div> <div className="text-muted"><small>Total Income</small></div></div></div></div></div></div>
    
-    <div className="col-sm-6 col-lg-3 cardAlimento"><div className="card"><div className="card-header text-white bg-warning"><div className="font-weight-bold"><span>SALE</span> <span className="float-right">$1.890,65</span></div> <div><span><small>Today 6:43 AM</small></span> <span className="float-right"><small>+432,50 (15,78%)</small></span></div>
-   <div className="sales"><div className="mt-2"><div className="chartjs-size-monitor" styles="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;">
-  <div className="chartjs-size-monitor-expand" styles="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div styles="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div>
-  <div className="chartjs-size-monitor-shrink" styles="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div styles="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div><canvas id="line-chart" width="200" height="15" className="chartjs-render-monitor" styles="display: block; width: 200px; height: 15px;"></canvas></div>
-  <div className="chart-wrapper" styles="margin-top: -20px; height: 50px;"><div className="chartjs-size-monitor" styles="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;">
-  <div className="chartjs-size-monitor-expand" styles="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div styles="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div>
-  <div className="chartjs-size-monitor-shrink" styles="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div styles="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div><canvas id="bar-chart" width="200" height="50" className="chartjs-render-monitor" styles="display: block; width: 200px; height: 50px;"></canvas></div></div></div>
-   <div className="card-body py-3 px-4">
-  <div className="row">  
-  <div className="col-5"><strong>+$780,98</strong> <br /> <span className="text-muted"><small>Weekly change</small></span></div> <div className="col-7 p-0"><div className="chart-wrapper px-3" styles="height: 30px;"><div className="chartjs-size-monitor" styles="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;">
-  <div className="chartjs-size-monitor-expand" styles="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div styles="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div><div className="chartjs-size-monitor-shrink" styles="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div styles="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div><canvas id="bar-chart" width="98" height="30" className="chartjs-render-monitor" styles="display: block; width: 98px; height: 30px;"></canvas></div></div></div></div> 
-  <div className="card-body py-0 px-4 b-t-1"><div className="row"><div className="col-6 b-r-1 py-3">
-  <div className="font-weight-bold">9.127</div>
-   <div className="text-muted"><small>Deals</small></div></div> <div className="col-6 py-3 text-right">
-   <div className="font-weight-bold">$1,897,87</div>
-   <div className="text-muted"><small>Total Income</small></div>
-  </div></div></div></div></div>
-  <p><p></p></p>
+    <div className="col-sm-6 col-lg-3 cardAlimento">
+      <div className="card"><div className="card-header text-white bg-warning">
+        <div className="font-weight-bold"><span>SALE</span> 
+        <span className="float-right">$1.890,65</span></div> 
+        <div><span><small>Today 6:43 AM</small></span> <span className="float-right"><small>+432,50 (15,78%)</small></span></div>
+        <div className="sales"><div className="mt-2"><div className="chartjs-size-monitor" styles="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;">
+        <div className="chartjs-size-monitor-expand" styles="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div styles="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div>
+        <div className="chartjs-size-monitor-shrink" styles="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div styles="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div><canvas id="line-chart" width="200" height="15" className="chartjs-render-monitor" styles="display: block; width: 200px; height: 15px;"></canvas></div>
+        <div className="chart-wrapper" styles="margin-top: -20px; height: 50px;"><div className="chartjs-size-monitor" styles="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;">
+        <div className="chartjs-size-monitor-expand" styles="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div styles="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div>
+        <div className="chartjs-size-monitor-shrink" styles="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div styles="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div><canvas id="bar-chart" width="200" height="50" className="chartjs-render-monitor" styles="display: block; width: 200px; height: 50px;"></canvas></div></div></div>
+        <div className="card-body py-3 px-4">
+        <div className="row">  
+        <div className="col-5"><strong>+$780,98</strong> <br /> <span className="text-muted"><small>Weekly change</small></span></div> <div className="col-7 p-0"><div className="chart-wrapper px-3" styles="height: 30px;"><div className="chartjs-size-monitor" styles="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;">
+        <div className="chartjs-size-monitor-expand" styles="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div styles="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div><div className="chartjs-size-monitor-shrink" styles="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div styles="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div><canvas id="bar-chart" width="98" height="30" className="chartjs-render-monitor" styles="display: block; width: 98px; height: 30px;"></canvas></div></div></div></div> 
+        <div className="card-body py-0 px-4 b-t-1">
+          <div className="row"><div className="col-6 b-r-1 py-3">
+          <div className="font-weight-bold">9.127</div>
+          <div className="text-muted"><small>Deals</small></div>
+          </div> 
+          <div className="col-6 py-3 text-right">
+          <div className="font-weight-bold">$1,897,87</div>
+          <div className="text-muted"><small>Total Income</small></div>
+          </div></div>
+        </div>
+      </div>      
+    </div>
+
+    <div className="col-sm-6 col-lg-3 cardAlimento">
+      <div className="card"><div className="card-header text-white bg-warning">
+        <div className="font-weight-bold"><span>SALE</span> 
+        <span className="float-right">$1.890,65</span></div> 
+        <div><span><small>Today 6:43 AM</small></span> <span className="float-right"><small>+432,50 (15,78%)</small></span></div>
+        <div className="sales"><div className="mt-2"><div className="chartjs-size-monitor" styles="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;">
+        <div className="chartjs-size-monitor-expand" styles="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div styles="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div>
+        <div className="chartjs-size-monitor-shrink" styles="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div styles="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div><canvas id="line-chart" width="200" height="15" className="chartjs-render-monitor" styles="display: block; width: 200px; height: 15px;"></canvas></div>
+        <div className="chart-wrapper" styles="margin-top: -20px; height: 50px;"><div className="chartjs-size-monitor" styles="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;">
+        <div className="chartjs-size-monitor-expand" styles="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div styles="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div>
+        <div className="chartjs-size-monitor-shrink" styles="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div styles="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div><canvas id="bar-chart" width="200" height="50" className="chartjs-render-monitor" styles="display: block; width: 200px; height: 50px;"></canvas></div></div></div>
+        <div className="card-body py-3 px-4">
+        <div className="row">  
+        <div className="col-5"><strong>+$780,98</strong> <br /> <span className="text-muted"><small>Weekly change</small></span></div> <div className="col-7 p-0"><div className="chart-wrapper px-3" styles="height: 30px;"><div className="chartjs-size-monitor" styles="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;">
+        <div className="chartjs-size-monitor-expand" styles="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div styles="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div><div className="chartjs-size-monitor-shrink" styles="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div styles="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div><canvas id="bar-chart" width="98" height="30" className="chartjs-render-monitor" styles="display: block; width: 98px; height: 30px;"></canvas></div></div></div></div> 
+        <div className="card-body py-0 px-4 b-t-1">
+          <div className="row"><div className="col-6 b-r-1 py-3">
+          <div className="font-weight-bold">9.127</div>
+          <div className="text-muted"><small>Deals</small></div>
+          </div> 
+          <div className="col-6 py-3 text-right">
+          <div className="font-weight-bold">$1,897,87</div>
+          <div className="text-muted"><small>Total Income</small></div>
+          </div></div>
+        </div>
+      </div>      
+    </div>
+
   </div>
 
 );

@@ -16,7 +16,7 @@ class Categorias extends Component {
 					{
 						//<img src={`http://lorempixel.com/60/60/food/${this.img()}/`} alt={item.categoria} />
 					}
-					<a href="#" onClick={this.props.categorias}>
+					<a href="#/" onClick={this.props.categorias}>
 						{item.classificacao} - {item.categoria}
 					</a>
 				</li>

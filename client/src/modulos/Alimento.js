@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
+
 import DetalheAlimento from './DetalheAlimento'
 import './Alimento.css'
 
@@ -9,7 +11,7 @@ class Alimentos extends Component {
         return (
             <Card>
                 <CardHeader>
-                    <h3>{this.props.descricao}</h3>
+                    <h3><Link to={`detalheAlimento/${'c0033a'}`}>{this.props.descricao}</Link></h3>
                 </CardHeader>
                 <CardBody>                             
                     <CardText>

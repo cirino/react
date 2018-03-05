@@ -1,7 +1,6 @@
 
 import React, { Component } from 'react'
 import './App.css'
-import Header from './modulos/Header'
 
 import Categorias from './modulos/Categoria'
 import Alimentos from './modulos/Alimento'
@@ -66,7 +65,6 @@ class App extends Component {
       this.setState ({      
         cat: parseInt(id, 10)
       })
-      console.log(id)
     }
 
   render() {
@@ -76,7 +74,6 @@ class App extends Component {
 
       <div data-js="App">
 
-
           <div className="container-box">
             <header className="box">
               
@@ -84,7 +81,7 @@ class App extends Component {
                 {this.state.fetching
                   ? 'Recuperando dados da API'
                   : this.state.message}
-                </p>
+              </p>
             </header>
 
             <aside className="box">

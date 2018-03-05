@@ -46,7 +46,7 @@ export default props => (
                 </div>
                 <div className="col-12 copyright mt-3">
                     <p className="float-left">
-                        <a href="#">Back to top</a>
+                        <a href="#/">Back to top</a>
                     </p>
                     <p className="text-right text-muted">Atualizado <i className="fa fa-heart"></i>: <a href=""><i>v0.2.1</i></a> | <span>v. 0.2.1</span></p>
                 </div>
