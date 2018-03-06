@@ -26,7 +26,7 @@ class DetalheAlimento extends Component {
     var params = new URLSearchParams();
     params.append('numero', this.state.id);
 
-     axios.post('http://nware.com.br/tbca/tbca/model/itemProdutoMedDAO.php', params, { mode: {"no-cors"}})
+     axios.post('http://nware.com.br/tbca/tbca/model/itemProdutoMedDAO.php', params, { mode: "no-cors"})
       .then((response) => {
         tabela =  response.data;
 
